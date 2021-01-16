@@ -1,5 +1,5 @@
 # ExtendedLauncher
-Closed-Source Minetest Client Launcher
+Open-Source Minetest Client Launcher
 
 # Short how-to
 Just input the path to the minetest installation (not the bin folder) in the text-bar at the bottom and click launch. If you did it correctly, minetest should start.
