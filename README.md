@@ -9,6 +9,7 @@ You cant:
 - Decompile the jar
 - Share the jar and assets
 - Tell someone this is your own work
+
 You can:
 - Ask me about the source code on discord
 - Request new features
