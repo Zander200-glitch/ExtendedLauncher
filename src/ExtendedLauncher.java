@@ -13,7 +13,7 @@ import java.util.Random;
 public class ExtendedLauncher extends JFrame {
     double version = 1.2;
     String name = "ExtendedLauncher";
-    String versionString = "1.2.3";
+    String versionString = "1.2.4";
     public ExtendedLauncher(){
         super("Loading Launcher...");
     }
