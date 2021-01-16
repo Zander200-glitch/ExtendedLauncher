@@ -11,9 +11,9 @@ import java.io.IOException;
 import java.util.Random;
 
 public class ExtendedLauncher extends JFrame {
-    double version = 1.2;
+    double version = 1.3;
     String name = "ExtendedLauncher";
-    String versionString = "1.2.4";
+    String versionString = "1.3";
     public ExtendedLauncher(){
         super("Loading Launcher...");
     }
@@ -168,6 +168,56 @@ public class ExtendedLauncher extends JFrame {
             }
         });
 
+        JButton runSaveOne = new JButton();
+        runSaveOne.setText("Save 1");
+        runSaveOne.setBounds(125, 0, 100, 20);
+        runSaveOne.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Runtime rt = Runtime.getRuntime();
+                try {
+                    notifyLabel.setText("Launching...");
+                    rt.exec(new String[]{save1 + "\\bin\\minetest.exe"});
+                    notifyLabel.setText(MOTSGen.getMOTS());
+                } catch (IOException ioe) {
+                    ioe.printStackTrace();
+                }
+            }
+        });
+
+        JButton runSaveTwo = new JButton();
+        runSaveTwo.setText("Save 2");
+        runSaveTwo.setBounds(225, 0, 100, 20);
+        runSaveTwo.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Runtime rt = Runtime.getRuntime();
+                try {
+                    notifyLabel.setText("Launching...");
+                    rt.exec(new String[]{save2 + "\\bin\\minetest.exe"});
+                    notifyLabel.setText(MOTSGen.getMOTS());
+                } catch (IOException ioe) {
+                    ioe.printStackTrace();
+                }
+            }
+        });
+
+        JButton runSaveThree = new JButton();
+        runSaveThree.setText("Save 3");
+        runSaveThree.setBounds(325, 0, 100, 20);
+        runSaveThree.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Runtime rt = Runtime.getRuntime();
+                try {
+                    notifyLabel.setText("Launching...");
+                    rt.exec(new String[]{save3 + "\\bin\\minetest.exe"});
+                    notifyLabel.setText(MOTSGen.getMOTS());
+                } catch (IOException ioe) {
+                    ioe.printStackTrace();
+                }
+            }
+        });
 
         extendedLauncher.getContentPane().add(panel);
         extendedLauncher.getContentPane().add(winSubtitle);
@@ -181,6 +231,9 @@ public class ExtendedLauncher extends JFrame {
         winSubtitle.setBounds(0, 0, w, h);
         extendedLauncher.add(winSubtitle);
 
+        extendedLauncher.add(runSaveOne);
+        extendedLauncher.add(runSaveTwo);
+        extendedLauncher.add(runSaveThree);
 
         extendedLauncher.add(imgPanel);
         extendedLauncher.setVisible(true);
