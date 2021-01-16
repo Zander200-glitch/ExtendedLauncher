@@ -6,13 +6,13 @@ Just input the path to the minetest installation (not the bin folder) in the tex
 
 # License
 You cant: 
-- Decompile the jar
-- Share the jar and assets
+- Share the assets
 - Tell someone this is your own work
 
 You can:
 - Ask me about the source code on discord
 - Request new features
+- Implement your own things and pull-request it.
 For other things you might want to know, DM me on discord.
 
 # Saves
