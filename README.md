@@ -17,3 +17,6 @@ For other things you might want to know, DM me on discord.
 
 # Saves
 To create a save, just create a "save1.sav", "save2.sav" or "save3.sav" in the assets folder and in the first line of the file put i your path to the minetest installation (not the bin folder). Then go into the launcher and select "Save 1", "Save 2" or "Save 3" from the dropdown list at the bottom and hit Launch.
+
+# Modding
+If you want to contribute, just open the .iml file in JetBrains IntelliJ IDEA. From there you can mod my src.
